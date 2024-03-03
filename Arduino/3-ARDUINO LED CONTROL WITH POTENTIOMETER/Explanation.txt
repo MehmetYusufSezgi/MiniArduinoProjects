@@ -1,0 +1,5 @@
+This Arduino sketch sets up pin 3 as an output for an LED and pin A0 to read analog input from a potentiometer.
+
+In the loop function, it continuously reads the analog value from the potentiometer using analogRead. The obtained value is then mapped from the range of 0 to 1023 to the range of 0 to 255, which is suitable for PWM (Pulse Width Modulation) control.
+
+Finally, the mapped value is used to adjust the brightness of the LED connected to pin 3 using analogWrite. As the potentiometer is adjusted, the brightness of the LED changes accordingly, allowing for easy control of the LED's intensity.

@@ -1,0 +1,5 @@
+This Arduino sketch utilizes a LDR light sensor connected to analog pin A0 and an LED connected to pin 3.
+
+In the setup function, pin 3 is configured as an output for the LED, and serial communication is initialized at a baud rate of 9600.
+
+During the loop, the code continuously reads the analog value from the LDR sensor. This value is then printed to the serial monitor for real-time monitoring. If the light intensity exceeds a threshold of 500 (indicating bright light), the LED connected to pin 3 is turned off. Conversely, if the light intensity falls below 500 (indicating low light), the LED is turned on. This setup effectively creates an automatic light control system where the LED responds to changes in ambient light conditions.

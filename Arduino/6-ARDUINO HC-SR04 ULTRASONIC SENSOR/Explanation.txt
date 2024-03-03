@@ -1,0 +1,13 @@
+This project utilizes an HC-SR04 ultrasonic sensor and a buzzer. The ultrasonic sensor is connected to two pins: one for triggering the sensor (trigPin) and another for receiving the echo (echoPin). The buzzer is connected to a separate pin (buzzerPin).
+
+During operation:
+
+The trigPin sends a short pulse to the ultrasonic sensor to initiate a measurement.
+
+The echoPin then receives the echo signal, and the duration of this signal is measured.
+
+Based on the duration of the echo signal, the distance to the nearest object is calculated. This distance calculation assumes the speed of sound and converts the time taken for the echo into a distance measurement in centimeters.
+
+If the measured distance falls within a specified range (defined by maximumRange and minimumRange variables), the buzzer produces a tone. The tone's duration is proportional to the measured distance, with a longer duration indicating a closer object and vice versa.
+
+The process repeats continuously in the loop function, allowing real-time distance monitoring with audible feedback.

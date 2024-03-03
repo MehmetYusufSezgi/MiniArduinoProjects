@@ -1,0 +1,1 @@
+This Arduino project initializes pin 8 as an output, controlling an LED connected to it. It sets initial speed values and then iterates through a loop, repeatedly calling the 'MyFunction' function to alternate turning the LED on and off with specified delays.

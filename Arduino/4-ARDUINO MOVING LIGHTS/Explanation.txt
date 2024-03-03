@@ -1,0 +1,3 @@
+This Arduino sketch initializes an array 'leds' containing pin numbers where LEDs are connected. In the setup function, it configures these pins as outputs to control the LEDs.
+
+The loop function then executes two loops. The first loop sequentially turns on and off each LED from pins 2 to 7, with a short delay between each transition. Following this, the second loop does the same in reverse order, turning off the LEDs in the opposite sequence. This setup creates a visual effect where the LEDs appear to 'chase' in one direction and then reverse.

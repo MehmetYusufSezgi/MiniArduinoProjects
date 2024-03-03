@@ -1,0 +1,1 @@
+This project combines a servo motor and joystick. It sets up the servo motor and continuously adjusts its position based on joystick movements. The joystick, connected to pin A0, provides analog readings that are mapped to servo angles, allowing smooth and intuitive control over the motor's rotation. 

@@ -1,0 +1,8 @@
+
+This Arduino sketch integrates a water sensor with a buzzer to provide an alert when the water level surpasses a specified threshold. The water sensor is connected to analog pin A0 (sensorPin), while the buzzer is connected to digital pin 8 (buzzerPin). The threshold value is set to 250 to indicate the maximum acceptable water level.
+
+During the setup function, the buzzerPin is configured as an output to control the buzzer.
+
+In the loop function, the code continuously reads the analog signal from the water sensor using the analogRead function and stores it in the variable 'data'. If the water level exceeds the threshold (when 'data' is greater than 250), the buzzer emits a tone with a frequency of 440 Hz using the tone function for 100 milliseconds, followed by a pause of 100 milliseconds. This sequence repeats to produce an intermittent alert signal.
+
+When the water level is within the acceptable range (when 'data' is less than or equal to the threshold), the buzzer is turned off using the noTone function.
